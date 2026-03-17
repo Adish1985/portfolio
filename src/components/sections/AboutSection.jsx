@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import profile from "../../assets/profile.jpeg";
 
 const AboutSection = () => {
   return (
     <section id="about" className="section">
       <div className="container">
-        
+
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: 100, filter: 'blur(20px)' }}
           whileInView={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
@@ -19,8 +20,8 @@ const AboutSection = () => {
         </motion.div>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
-          
-          <motion.div 
+
+          <motion.div
             className="about-image-wrapper"
             initial={{ opacity: 0, x: -100, scale: 0.5, rotate: -15, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, x: 0, scale: 1, rotate: 0, filter: 'blur(0px)' }}
@@ -28,7 +29,7 @@ const AboutSection = () => {
             transition={{ duration: 1.2, type: "spring", bounce: 0.4 }}
             style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}
           >
-            <div 
+            <div
               style={{
                 width: '100%',
                 maxWidth: '400px',
@@ -40,9 +41,9 @@ const AboutSection = () => {
                 boxShadow: '0 20px 40px rgba(0,0,0,0.5)'
               }}
             >
-              <img 
-                src="/profile.jpeg" 
-                alt="Adish P P" 
+              <img
+                src={profile}
+                alt="Adish P P"
                 style={{
                   width: '100%',
                   height: '100%',
@@ -54,20 +55,20 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 100, scale: 0.8, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, x: 0, scale: 1, filter: 'blur(0px)' }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, type: "spring", bounce: 0.4, delay: 0.2 }}
             style={{ flex: '1 1 500px' }}
           >
-            <motion.h3 
+            <motion.h3
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
               style={{ fontSize: '1.75rem', marginBottom: '1.5rem' }}
             >
               Modern, Efficient, AI-Empowered.
             </motion.h3>
-            
+
             <ul style={{ listStyleType: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem', color: 'var(--text-secondary)', fontSize: '1.125rem', lineHeight: '1.6' }}>
               {[
                 { title: 'Laravel Expert:', desc: 'Real-world project experience building scalable applications, handling backend logic, APIs, and database design.' },
@@ -75,7 +76,7 @@ const AboutSection = () => {
                 { title: 'Code Quality:', desc: 'A strict focus on writing clean, efficient, and maintainable code—using AI as a tool, not a crutch.' },
                 { title: 'Continuous Learning:', desc: 'Passionate about learning new frameworks and adapting to modern, evolving technologies.' }
               ].map((item, idx) => (
-                <motion.li 
+                <motion.li
                   key={idx}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -89,7 +90,7 @@ const AboutSection = () => {
               ))}
             </ul>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
