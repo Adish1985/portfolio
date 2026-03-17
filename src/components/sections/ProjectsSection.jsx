@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       title: 'Star Cool',
       category: 'CRM Platform',
       description: 'A comprehensive Customer Relationship Management system handling significant continuous updations and maintenance for sales tracking and client relations.',
-      techStack: ['Laravel', 'Vue.js', 'MySQL', 'REST API'],
+      techStack: ['Laravel','Js', 'MySQL', 'REST API'],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'
     },
     {
