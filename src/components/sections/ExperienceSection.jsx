@@ -20,7 +20,7 @@ const ExperienceSection = () => {
     {
       company: 'Glinjos Innovations',
       role: 'Full Stack Developer',
-      period: 'Mar 2025 - Dec 2025',
+      period: 'Mar 2025 - Nov 2025',
       responsibilities: [
         'Maintained full-stack web features utilizing Laravel for backend and modular HTML/CSS/JS interfaces.',
         'Engineered complex backend logic for a real-time meal booking platform complete with online payment flows.',
