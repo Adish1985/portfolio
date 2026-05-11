@@ -72,6 +72,10 @@ const AboutSection = () => {
             <ul style={{ listStyleType: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem', color: 'var(--text-secondary)', fontSize: '1.125rem', lineHeight: '1.6' }}>
               {[
                 { title: 'Laravel Expert:', desc: 'Real-world project experience building scalable applications, handling backend logic, APIs, and database design.' },
+                {
+                  title: 'MVC Architecture:',
+                  desc: 'Strong understanding of MVC architecture in Laravel, ensuring clear separation of concerns and maintainable application structure.'
+                },
                 { title: 'AI-Assisted Efficiency:', desc: 'I actively use AI tools (ChatGPT, GitHub Copilot) to enhance development speed, debug faster, and build better UI.' },
                 { title: 'Code Quality:', desc: 'A strict focus on writing clean, efficient, and maintainable code—using AI as a tool, not a crutch.' },
                 { title: 'Continuous Learning:', desc: 'Passionate about learning new frameworks and adapting to modern, evolving technologies.' }
@@ -98,7 +102,7 @@ const AboutSection = () => {
               style={{ display: 'flex', gap: '3rem', mt: '2rem', marginTop: '2.5rem' }}
             >
               <div>
-                <h4 style={{ fontSize: '2rem', color: 'var(--text-primary)', fontFamily: 'Outfit' }}>1.5+</h4>
+                <h4 style={{ fontSize: '2rem', color: 'var(--text-primary)', fontFamily: 'Outfit' }}>1.8+</h4>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Years Experience</p>
               </div>
               <div style={{ width: '1px', background: 'var(--glass-border)' }}></div>

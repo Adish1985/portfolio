@@ -23,7 +23,7 @@ const ProjectsSection = () => {
     },
     {
       title: 'Canteen Booking',
-      category: 'Internal Tool',
+      category: 'Booking Platform',
       description: 'A streamlined meal booking platform utilized for daily workforce food reservations, simplifying kitchen prep numbers.',
       techStack: ['PHP', 'Laravel', 'HTML/CSS', 'JavaScript'],
       image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80'
@@ -186,9 +186,9 @@ const ProjectsSection = () => {
                   <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: '500' }}>
                     <ExternalLink size={18} /> View Live
                   </a>
-                  <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: '500' }}>
+                  {/* <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: '500' }}>
                     <Code2 size={18} /> Source Code
-                  </a>
+                  </a> */}
                 </motion.div>
               </div>
             </motion.div>

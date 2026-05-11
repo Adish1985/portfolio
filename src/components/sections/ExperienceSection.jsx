@@ -31,7 +31,7 @@ const ExperienceSection = () => {
     {
       company: 'Glinjos Innovations (Internship)',
       role: 'Full Stack Developer Intern',
-      period: 'Jul 2024 - Feb 2025',
+      period: 'Jun 2024 - Feb 2025',
       responsibilities: [
         'Built a strong foundation in cross-platform mobile development using Flutter and Android Studio.',
         'Developed backend logic, scripting, and automation using Python.',

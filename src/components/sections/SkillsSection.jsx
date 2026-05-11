@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 import { Code2, Server, Database, Layers, Sparkles, Workflow } from 'lucide-react';
 
 const SkillsSection = () => {
+  const newLocal = <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+    {['PHP 8', 'RESTful APIs', 'Eloquent ORM', 'Artisan', 'Middleware'].map(skill => (
+      <span key={skill} className="bento-tag">{skill}</span>
+    ))}
+  </div>;
   return (
     <section id="skills" className="section" style={{ background: 'var(--bg-secondary)', position: 'relative' }}>
       <div className="container">
@@ -38,11 +43,7 @@ const SkillsSection = () => {
             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: '1.6' }}>
               My primary domain. Building scalable APIs, designing complex MVC structures, handling background jobs, and optimizing queries for high-performance applications.
             </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-              {['PHP 8', 'RESTful APIs', 'Eloquent ORM', 'Artisan', 'Middleware'].map(skill => (
-                <span key={skill} className="bento-tag">{skill}</span>
-              ))}
-            </div>
+            {newLocal}
           </motion.div>
 
           {/* Card 2: Modern Frontend (Medium) */}
@@ -101,7 +102,7 @@ const SkillsSection = () => {
             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Integrations</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <span>Razorpay / HDFC Flows</span>
-              <span>SMTP Mail & OTP Auth</span>
+              <span> Mail & OTP Auth</span>
               <span>Third-Party REST APIs</span>
             </div>
           </motion.div>
