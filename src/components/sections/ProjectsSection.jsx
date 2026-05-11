@@ -86,7 +86,7 @@ const ProjectsSection = () => {
         >
           <div>
             <h2 className="section-title" style={{ marginBottom: '0.5rem', textAlign: 'left' }}>
-              Selected <span className="gradient-text">Projects</span>
+               <span className="gradient-text">Projects</span>
             </h2>
             <p style={{ color: 'var(--text-secondary)' }}>Note: Also handled continuous updations & maintenance across various other client platforms.</p>
           </div>
