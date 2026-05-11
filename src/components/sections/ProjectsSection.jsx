@@ -183,9 +183,9 @@ const ProjectsSection = () => {
                   initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
                   style={{ display: 'flex', gap: '1.5rem', marginTop: 'auto' }}
                 >
-                  <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: '500' }}>
+                  {/* <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: '500' }}>
                     <ExternalLink size={18} /> View Live
-                  </a>
+                  </a> */}
                   {/* <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: '500' }}>
                     <Code2 size={18} /> Source Code
                   </a> */}
