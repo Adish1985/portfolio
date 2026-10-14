@@ -4,7 +4,7 @@ import { Code2, Server, Database, Layers, Sparkles, Workflow } from 'lucide-reac
 
 const SkillsSection = () => {
   const newLocal = <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-    {['PHP 8', 'RESTful APIs', 'Eloquent ORM', 'Artisan', 'Middleware'].map(skill => (
+    {['PHP ', 'RESTful APIs', 'Eloquent ORM', 'Artisan', 'Middleware', 'Auth', 'Third Party Apis','Ques' ,'Traits','Api Integration'].map(skill => (
       <span key={skill} className="bento-tag">{skill}</span>
     ))}
   </div>;

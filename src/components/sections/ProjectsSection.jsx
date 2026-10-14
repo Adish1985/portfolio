@@ -8,33 +8,55 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: 'Star Cool',
-      category: 'CRM Platform',
-      description: 'A comprehensive Customer Relationship Management system handling significant continuous updations and maintenance for sales tracking and client relations.',
-      techStack: ['Laravel','Js', 'MySQL', 'REST API'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'
-    },
-    {
       title: 'Shree Kaka Ji Masala',
       category: 'E-Commerce',
       description: 'A fully functional e-commerce platform dedicated to selling premium spices, with robust inventory tracking and secure checkout flows.',
       techStack: ['Laravel', 'Bootstrap', 'Razorpay', 'MySQL'],
-      image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80'
+      image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80',
+       link: 'https://www.shreekakajimasale.com/'
+
     },
+    {
+      title: 'Star Cool',
+      category: 'CRM Platform', 
+      description: 'A CRM platform where staff manage customer calls, schedule appointments, and assign technicians to service tasks, with functionality controlled by role-based privileges and full administrative access.',
+      techStack: ['Laravel','Js', 'MySQL', 'REST API'],
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+      link:'https://development.starcoolcrm.com/'
+    },
+    
     {
       title: 'Canteen Booking',
       category: 'Booking Platform',
-      description: 'A streamlined meal booking platform utilized for daily workforce food reservations, simplifying kitchen prep numbers.',
+      description: 'A school meal booking platform that allows parents to pre-book meals for their children, enabling teachers to view the list of students with confirmed meal bookings.',
       techStack: ['PHP', 'Laravel', 'HTML/CSS', 'JavaScript'],
-      image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80'
+      image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+      link:'https://glinjos.com/Canteen/mealbooking'
     },
     {
       title: 'Sand POS',
       category: 'Booking Platform',
       description: 'An online sand booking platform operating on a token-based reservation system to manage queues and logistics efficiently.',
       techStack: ['Laravel', 'jQuery', 'MySQL', 'REST API'],
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80'
-    }
+      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+      link:'https://glinjos.com/SAND/user/booking'
+    },
+    {
+      title: 'Infowale',
+      category: 'Service Booking Platform',
+      description: 'A professional services marketplace where users can discover and book skilled professionals — from web developers and designers to photographers and more — all in one place.',
+      techStack: ['Laravel', 'HTML', 'CSS', 'JavaScript'],
+      image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80',
+      link: 'https://infowale.in/'
+    },
+    {
+      title: '94 Twins',
+      category: 'E-Commerce',
+      description: 'A home appliance e-commerce website offering a seamless shopping experience with product listings, cart management, and a clean, modern storefront.',
+      techStack: ['Laravel', 'HTML', 'CSS', 'JavaScript'],
+      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80'
+    },
+    
   ];
 
   const handleNext = () => {
@@ -183,12 +205,28 @@ const ProjectsSection = () => {
                   initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
                   style={{ display: 'flex', gap: '1.5rem', marginTop: 'auto' }}
                 >
-                  {/* <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', fontWeight: '500' }}>
-                    <ExternalLink size={18} /> View Live
-                  </a> */}
-                  {/* <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: '500' }}>
-                    <Code2 size={18} /> Source Code
-                  </a> */}
+                  {projects[currentIndex].link && (
+                    <a
+                      href={projects[currentIndex].link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'flex', alignItems: 'center', gap: '0.5rem',
+                        padding: '0.5rem 1.25rem',
+                        background: 'var(--accent-color)',
+                        color: '#000',
+                        fontWeight: '600',
+                        borderRadius: '6px',
+                        fontSize: '0.9rem',
+                        textDecoration: 'none',
+                        transition: 'opacity 0.2s ease'
+                      }}
+                      onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+                      onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+                    >
+                      <ExternalLink size={16} /> View Live
+                    </a>
+                  )}
                 </motion.div>
               </div>
             </motion.div>

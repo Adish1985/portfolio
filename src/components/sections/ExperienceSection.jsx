@@ -6,6 +6,15 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
+    company: 'Freelance Projects',
+    role: 'Full Stack Developer',
+    // period: 'Dec 2025 - Mar 2026',
+    responsibilities: [
+      'Worked on freelance projects including 94Twins and Infowale, delivering customized web solutions based on client requirements.',
+      'Handled server-side operations, including deployment, application updates, and server maintenance via SSH.'
+    ]
+  },
+    {
       company: 'Urbanhub Innovations',
       role: 'Laravel Developer (React / Inertia.js)',
       period: 'Dec 2025 - Mar 2026',

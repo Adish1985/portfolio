@@ -102,12 +102,12 @@ const AboutSection = () => {
               style={{ display: 'flex', gap: '3rem', mt: '2rem', marginTop: '2.5rem' }}
             >
               <div>
-                <h4 style={{ fontSize: '2rem', color: 'var(--text-primary)', fontFamily: 'Outfit' }}>1.8+</h4>
+                <h4 style={{ fontSize: '2rem', color: 'var(--text-primary)', fontFamily: 'Outfit' }}>2+</h4>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Years Experience</p>
               </div>
               <div style={{ width: '1px', background: 'var(--glass-border)' }}></div>
               <div>
-                <h4 style={{ fontSize: '2rem', color: 'var(--text-primary)', fontFamily: 'Outfit' }}>4+</h4>
+                <h4 style={{ fontSize: '2rem', color: 'var(--text-primary)', fontFamily: 'Outfit' }}>5+</h4>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Major Projects</p>
               </div>
             </motion.div>
